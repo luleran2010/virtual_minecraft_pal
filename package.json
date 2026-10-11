@@ -1,0 +1,24 @@
+{
+  "name": "virtual-minecraft-pal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Langflow-powered Minecraft chat bot with an upstream Minecraft MCP server",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "dotenv": "^18.0.6",
+    "minecraft-data": "^3.105.0",
+    "minecraft-mcp-server": "file:vendor/minecraft-mcp-server",
+    "mineflayer": "^4.35.0",
+    "mineflayer-pathfinder": "^2.4.2",
+    "vec3": "^0.1.8",
+    "zod": "^3.25.76"
+  }
+}
